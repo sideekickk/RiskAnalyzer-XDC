@@ -16,13 +16,6 @@ A comprehensive tool for analyzing the **risk profile of tokenized Real-World As
 - ✅ Multi-asset support (Invoices, Real Estate, Bonds)
 - ✅ Transaction history and visualization
 
-## 🏗️ Platform Structure
-
-```
-/frontend      → React + Tailwind UI
-/backend       → Node.js + Express for API services
-/contracts     → Solidity Smart Contracts on XDC Apothem
-```
 
 ## 📊 Supported Asset Types
 
@@ -48,7 +41,7 @@ Risk is calculated using a weighted average of these factors, simulating data vi
 
 - ✅ Smart Contract: `RiskRegistry.sol` on XDC Apothem testnet
 - ✅ Stores: `assetID`, `riskScore`, `loanAmount`, `timestamp`
-- ✅ Verification: Use transaction hash to validate on [XDC Explorer](https://apothem.xdc.org)
+- ✅ Verification: Use transaction hash to validate on XDC Explorer
 
 ## 🚀 How to Use
 
@@ -84,7 +77,7 @@ npm run dev
 
 ### Smart Contract Deployment
 
-1. Deploy `RiskRegistry.sol` on [Remix IDE](https://remix.ethereum.org)
+1. Deploy `RiskRegistry.sol` on Remix IDE
 2. Use Injected Web3 → Apothem
 3. Copy deployed address into `blockchainService.ts`
 
@@ -111,4 +104,4 @@ Watch a full walkthrough here:
 
 ---
 
-### 🏆 Built for the [XDC Plugin Oracle Hackathon] using real-world blockchain applications.
+### 🏆 Built for the XDC Plugin Oracle Hackathon using real-world blockchain applications.
