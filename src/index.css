@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .ios-input {
+    @apply w-full px-4 py-3 bg-white rounded-2xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 ease-out appearance-none;
+  }
+
+  .ios-card {
+    @apply bg-white rounded-3xl shadow-sm border border-gray-100;
+  }
+
+  .ios-button {
+    @apply px-6 py-3 bg-blue-500 text-white font-medium rounded-full shadow-sm hover:bg-blue-600 active:bg-blue-700 transition-all duration-200 ease-out disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .ios-select {
+    @apply w-full px-4 py-3 bg-white rounded-2xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 ease-out appearance-none;
+  }
+
+  .ios-label {
+    @apply block text-sm font-medium text-gray-600 mb-1;
+  }
+}
